@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User list</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      a {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>User list</h2>
+    
+    <form id="form" name="userForm">
+      <input type="hidden" name="id" value="0">
+      <div class="form-group">
+        <label for="user">User:</label>
+        <input class="form-control" name="user">
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input class="form-control" name="name">
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input class="form-control" name="age">
+      </div>
+      <div class="form-group">
+        <label for="ailment">Ailment:</label>
+        <input class="form-control" name="ailment">
+      </div>
+      <div class="panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Save</button>
+        <a id="reset" class="btn btn-sm btn-primary">Reset</a>
+      </div>
+    </form>
+
+    <table class="table table-condensed table-stripted table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Ailment</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+      <script type="text/javascript" src="client.js"></script>
+  </body>
+</html>
